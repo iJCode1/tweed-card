@@ -99,16 +99,22 @@ body {
   color: var(--grey);
 }
 .grid__heart{
+  gap: 6px;
   align-items: center;
   display: flex;
 }
-.grid__heart > span{
-  background-size: 34px;
+.heart{
+  background-size:15px;
   background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
   display: block;
-  height: 34px;
+  height: 16px;
   background-image: url("../assets/icons/heart.svg");
-  width: 34px;
+  width: 16px;
+}
+.heart__animation{
+  background-image: url("../assets/icons/heart__red.svg");
 }
 .grid__heart > p{
   color: var(--grey);
@@ -146,9 +152,9 @@ body {
     display: inline-block;
   }
   .grid__heart > span{
-    background-size: 40px;
-    height: 40px;
-    width: 40px;
+    background-size: 18px;
+    height: 20px;
+    width: 20px;
   }
   .grid__heart p{
     font-size: 16px;
